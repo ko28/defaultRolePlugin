@@ -16,22 +16,25 @@ spinnakerBundle {
   pluginId = "ko28.DefaultRolePlugin"
   description = "Adds the fiat role 'public' to all users."
   provider = "https://github.com/ko28"
-  version = rootProject.version
+  //version = rootProject.version
+  version = projectVersion
+
 }
 
-version = normalizedVersion()
+//version = normalizedVersion()
 
 subprojects {
   group = "io.ko28.plugin.spring"
-  version = rootProject.version
+  //version = rootProject.version
+  version = projectVersion
 }
 
-String normalizedVersion() {
-  String fullVersion = gitVersion()
-  String normalized = fullVersion.split("-").first()
-  if (fullVersion.contains("dirty")) {
-    return "$normalized-SNAPSHOT"
-  } else {
-    return normalized
-  }
-}
+//String normalizedVersion() {
+//  String fullVersion = gitVersion()
+//  String normalized = fullVersion.split("-").first()
+//  if (fullVersion.contains("dirty")) {
+//    return "$normalized-SNAPSHOT"
+//  } else {
+//    return normalized
+//  }
+//}

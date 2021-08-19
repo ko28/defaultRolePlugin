@@ -5,11 +5,11 @@
         "provider": "https://github.com/ko28",
         "releases": [
             {
-                "version": "1.11.0",
-                "date": "2021-08-18T12:14:05.270231Z",
+                "version": "1.0.0",
+                "date": "2021-08-19T00:23:57.732854Z",
                 "requires": "fiat>=0.0.0",
-                "sha512sum": "bcb4dd67e55c0d029c0e875d4b1d7d98e89c923bb29ea2bb0979bd9f8ec4e51a9af4f18de2370c33abefcce616b3fde5c5b0a2f96822cad8a95ccbedf1bb9230",
-                "url": "https://github.com/ko28/springExamplePlugin/releases/download/1.11.0/springExamplePlugin-v1.11.0.zip"
+                "sha512sum": "8fcd823508201a87b2c4013044520e2daa19c09d32d5f6234b5a8790452f15cfab2190afb1bc3d4079c0aa091ab45fcc8fa6b6ac8528cc84bb05cc2f03801019",
+                "url": "https://github.com/ko28/defaultRolePlugin/releases/download/1.0.0/defaultRolePlugin.zip"
             }
         ]
     }

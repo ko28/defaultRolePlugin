@@ -6,7 +6,7 @@ pluginManagement {
   }
 }
 
-rootProject.name="springRolePlugin"
+rootProject.name="defaultRolePlugin"
 
 include "default-role-fiat"
 
