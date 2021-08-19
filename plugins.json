@@ -1,0 +1,16 @@
+[
+    {
+        "id": "ko28.DefaultRolePlugin",
+        "description": "Adds the fiat role 'public' to all users.",
+        "provider": "https://github.com/ko28",
+        "releases": [
+            {
+                "version": "1.11.0",
+                "date": "2021-08-18T12:14:05.270231Z",
+                "requires": "fiat>=0.0.0",
+                "sha512sum": "bcb4dd67e55c0d029c0e875d4b1d7d98e89c923bb29ea2bb0979bd9f8ec4e51a9af4f18de2370c33abefcce616b3fde5c5b0a2f96822cad8a95ccbedf1bb9230",
+                "url": "https://github.com/ko28/springExamplePlugin/releases/download/1.11.0/springExamplePlugin-v1.11.0.zip"
+            }
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlinVersion"
+  }
+}
+apply plugin: "io.spinnaker.plugin.service-extension"
+apply plugin: "maven-publish"
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-spring'
+apply plugin: 'kotlin-kapt'
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+  mavenCentral()
+}
+
+spinnakerPlugin {
+  serviceName = "fiat"
+  pluginClass = "io.ko28.plugin.spring.SpringExamplePlugin"
+}
+
+dependencies {
+  compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+  compileOnly (group: 'org.springframework', name: 'spring-context', version: '5.2.1.RELEASE')
+  compileOnly (group: 'io.spinnaker.kork', name: 'kork-plugins-spring-api', version: "${korkVersion}")
+  compileOnly (group: 'org.springframework', name: 'spring-web', version: '5.2.2.RELEASE')
+  compileOnly (group: 'io.spinnaker.fiat', name: 'fiat-core', version: "${fiatVersion}")
+  compileOnly (group: 'io.spinnaker.fiat', name: 'fiat-file', version: "${fiatVersion}")
+  compileOnly (group: 'io.spinnaker.fiat', name: 'fiat-roles', version: "${fiatVersion}")
+  compileOnly(platform("io.spinnaker.fiat:fiat-bom:${fiatVersion}"))
+}
+
+//compileTestKotlin {
+//  kotlinOptions {
+//    languageVersion = "1.3"
+//    jvmTarget = "11"
+//  }
+//}
+
+//tasks.withType(Test) {
+//  useJUnitPlatform()
+//}
